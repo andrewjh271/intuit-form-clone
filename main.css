@@ -1,0 +1,201 @@
+/* general styling */
+
+body {
+  margin: 0;
+  background-color: #ECEEF1;
+  font-family: 'AvenirNext', 'Avenir', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(47, 108, 201);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #0077C5;
+  color: white;
+  border-radius: 6px;
+  border: 0;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 75%);
+  padding: 1vh;
+  font-family: 'AvenirNext', 'Avenir', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: auto;
+  width: fit-content;
+}
+
+li {
+  display: inline-block;
+}
+
+ion-icon {
+  top: 1px;
+  position: relative;
+  font-size: 16px;
+}
+
+/* top navigation bar */
+
+#nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1vh;
+}
+
+#nav div {
+  color: #757575;
+}
+
+#nav div, #nav a {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+#nav button {
+  margin-right: 1vw;
+  padding: 0.4vh 1em;
+  font-size: 14px;
+}
+
+/* main page */
+
+main {
+  margin: auto;
+  width: 380px;
+}
+
+header {
+  margin-top: 4vh;
+}
+
+#main-logo {
+  width: 8em;
+  margin: auto;
+  display: block;
+}
+
+#product-links img {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+#product-links a {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  text-decoration: none;
+  color: #8e9096;
+}
+
+/* form */
+
+#signup-form {
+  border: 1px solid lightgray;
+  margin-top: 2vh;
+  box-sizing: border-box;
+}
+
+#account {
+  background-color: white;
+  padding: 2vh 2.5vw;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#form-heading {
+  margin-bottom: 2vh;
+}
+
+#form-heading * {
+  text-align: center;
+  margin: 1vh 0;
+  font-weight: lighter;
+}
+
+#form-heading h1 {
+  font-size: 24px;
+}
+
+#form-heading h5 {
+  font-size: 14px;
+}
+
+form input {
+  width: 100%;
+  margin-top: 1vh;
+  border: 1px solid lightgray;
+  font-size: 1.2em;
+  padding: 3px 6px;
+  font-family: 'AvenirNext', 'Avenir', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset, 0 0 8px rgb(82 168 236 / 60%);
+  outline: none;
+}
+
+.form-item {
+  margin-bottom: 3vh;
+}
+
+label {
+  font-size: 14px;
+}
+
+#open-lock {
+  position: relative;
+  top: -1.6em;
+  left: calc(100% - 2em);
+  color: #757575;
+}
+
+.terms {
+  font-size: 10px;
+}
+
+.policy {
+  font-size: 12px;
+  color: #757575;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 0;
+}
+
+.info {
+  font-size: 10px;
+  margin: 2vh;
+}
+
+#submit {
+  width: 100%;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3vh;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+footer * {
+  color: #505050;
+}
+
+footer li {
+  margin: 0 0.5em;
+}

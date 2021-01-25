@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intuit - Sign Up</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/07b0558508.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id='nav'>
+    <div>
+      <div>Already have an Intuit account?</div>
+      <a href='https://accounts.intuit.com/account-recovery.html'>
+        I forgot my User ID or Password
+      </a>
+    </div>
+    <button>
+      <ion-icon name="lock-closed"></ion-icon>
+      Sign In
+    </button>
+  </div>
+  <main>
+    <header>
+      <a href='https://accounts.intuit.com/signup.html'><img src='images/logo.jpg' id='main-logo'></a>
+      <ul id='product-links'>
+        <li>
+          <a href='https://turbotax.intuit.com/'>
+            <img src='images/turbo-tax-icon.jpg'>
+            <span>turbotax</span>
+          </a>
+        </li>
+        <li>
+          <a href='https://quickbooks.intuit.com/'>
+            <img src='images/quickbook-icon.jpg'>
+            <span>quickbooks</span>
+          </a>
+        </li>
+        <li>
+          <a href='https://mint.intuit.com/'>
+            <img src='images/mint-icon.jpg'>
+            <span>mint</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <form id='signup-form'>
+      <fieldset id='account'>
+        <hgroup id='form-heading'>
+          <h1>Create an Intuit account</h1>
+          <h5>
+            One account for everything. <a href='https://accounts-help.intuit.com/app/intuit/1995107'>Learn more</a>
+          </h5>
+        </hgroup>
+
+        <div class='form-item'>
+          <label for='email'>Email address</label>
+          <input type='email' id='email' name='email' required>
+        </div>
+
+        <div class='form-item'>
+          <label for='tel'>Phone (recommended)</label>
+          <input type='tel' id='tel' name='tel'>
+          <span class='terms'>Standard call, messaging or data rates may apply.</span>
+        </div>
+
+        <div class='form-item'>
+          <label for='password'>Password</label>
+          <input type='password' id='password' name='password'>
+          <ion-icon name="lock-open-outline" id='open-lock'></ion-icon>
+        </div>
+
+        <button id='submit' name='submit'>
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          Create Account
+        </button>
+
+        <p class='policy'>
+          <i>By clicking Create Account, you agree to our<br><a href='https://accounts.intuit.com/terms-of-service'>Terms</a> and have read and acknowledge our <a href='https://www.intuit.com/privacy/statement/'>Global Policy<br>Statement</a>.</i>
+        </p>
+
+      </fieldset>
+
+      <p class='info policy'>Invisible reCAPTCHA by Google <a href='https://www.google.com/intl/en/policies/privacy/'>Privacy Policy</a> and <a href='https://www.google.com/intl/en/policies/terms/'>Terms of Service</a>.</p>
+    </form>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href='https://www.intuit.com/legal/'>Legal</a></li>
+      <li><a href='https://www.intuit.com/privacy/statement/'>Privacy</a></li>
+      <li><a href='http://security.intuit.com/'>Security</a></li>
+    </ul>
+    <div>© 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</div>
+    <div>Terms and conditions, features, support, pricing, and service options subject to change without notice.</div>
+  </footer>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
