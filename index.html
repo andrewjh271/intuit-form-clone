@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div id='nav'>
+  <nav>
     <div>
       <div>Already have an Intuit account?</div>
       <a href='https://accounts.intuit.com/account-recovery.html'>
@@ -22,26 +22,26 @@
       <ion-icon name="lock-closed"></ion-icon>
       Sign In
     </button>
-  </div>
+  </nav>
   <main>
     <header>
-      <a href='https://accounts.intuit.com/signup.html'><img src='images/logo.jpg' id='main-logo'></a>
+      <a href='https://accounts.intuit.com/signup.html'><img src='images/logo.jpg' id='main-logo' alt="intuit logo"></a>
       <ul id='product-links'>
         <li>
           <a href='https://turbotax.intuit.com/'>
-            <img src='images/turbo-tax-icon.jpg'>
+            <img src='images/turbo-tax-icon.jpg' alt="turbotax logo">
             <span>turbotax</span>
           </a>
         </li>
         <li>
           <a href='https://quickbooks.intuit.com/'>
-            <img src='images/quickbook-icon.jpg'>
+            <img src='images/quickbook-icon.jpg' alt="quickbooks logo">
             <span>quickbooks</span>
           </a>
         </li>
         <li>
           <a href='https://mint.intuit.com/'>
-            <img src='images/mint-icon.jpg'>
+            <img src='images/mint-icon.jpg' alt="mint logo">
             <span>mint</span>
           </a>
         </li>
@@ -59,22 +59,27 @@
 
         <div class='form-item'>
           <label for='email'>Email address</label>
-          <input type='email' id='email' name='email' required autofocus>
+          <input type='email' id='email' name='email' required autofocus autocomplete="email">
         </div>
 
         <div class='form-item'>
           <label for='tel'>Phone (recommended)</label>
-          <input type='tel' id='tel' name='tel'>
+          <input type='tel'
+                 id='tel'
+                 name='tel'
+                 pattern="[0-9]{3}[\.\-]?[0-9]{3}[\.\-]?[0-9]{4}"
+                 title="555-555-5555"
+                 autocomplete="tel">
           <span class='terms'>Standard call, messaging or data rates may apply.</span>
         </div>
 
         <div class='form-item'>
           <label for='password'>Password</label>
-          <input type='password' id='password' name='password'>
+          <input type='password' id='password' name='password' required minlength="6">
           <ion-icon name="lock-open-outline" id='open-lock'></ion-icon>
         </div>
 
-        <button id='submit' name='submit'>
+        <button type="submit" id='submit'>
           <ion-icon name="lock-closed-outline"></ion-icon>
           Create Account
         </button>

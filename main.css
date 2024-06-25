@@ -47,22 +47,22 @@ ion-icon {
 
 /* top navigation bar */
 
-#nav {
+nav {
   display: flex;
   justify-content: flex-end;
   margin: 1vh;
 }
 
-#nav div {
+nav div {
   color: #757575;
 }
 
-#nav div, #nav a {
+nav div, #nav a {
   font-size: 12px;
   margin-right: 5px;
 }
 
-#nav button {
+nav button {
   margin-right: 1vw;
   padding: 0.4vh 1em;
   font-size: 14px;
