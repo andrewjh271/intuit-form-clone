@@ -148,6 +148,11 @@ form input:focus {
   outline: none;
 }
 
+form input:focus:invalid {
+  border-color: rgba(230, 40, 40, 0.8);
+  box-shadow: none;
+}
+
 .form-item {
   margin-bottom: 3vh;
 }
